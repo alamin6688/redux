@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Count from "./count/count";
 import Stars from "./count/Stars";
+import Count from "./count/Count";
 
 const initialState = [
   { id: 1, count: 0 },

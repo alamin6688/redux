@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 interface CountProps {
   count: number;
-  handleIncrement: (value: number) => void;
-  handleDecrement: (value: number) => void;
+  handleIncrement: () => void;
+  handleDecrement: () => void;
 }
 
 const Count = ({ count, handleIncrement, handleDecrement }: CountProps) => {
@@ -11,8 +11,8 @@ const Count = ({ count, handleIncrement, handleDecrement }: CountProps) => {
     <div className="space-y-4">
       <h3 className="text-4xl text-center">{count}</h3>
       <div className="flex gap-6 justify-center">
-        <Button onClick={() => handleIncrement(1)}>Increment</Button>
-        <Button onClick={() => handleDecrement(1)}>Decrement</Button>
+        <Button onClick={ handleIncrement}>Increment</Button>
+        <Button onClick={handleDecrement}>Decrement</Button>
       </div>
     </div>
   );

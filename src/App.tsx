@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Stars from "./count/Stars";
 import Count from "./count/Count";
@@ -22,12 +22,12 @@ function App() {
 
   return (
     <>
-      {counts.map((count) => (
+      {counts.map((item) => (
         <Count
-          key={count.id}
-          count={count.count}
-          handleIncrement={() => updateCount(count.id, 1)}
-          handleDecrement={() => updateCount(count.id, -1)}
+          key={item.id}
+          count={item.count}
+          handleIncrement={() => updateCount(item.id, 1)}
+          handleDecrement={() => updateCount(item.id, -1)}
         ></Count>
       ))}
       <Stars value={total}></Stars>

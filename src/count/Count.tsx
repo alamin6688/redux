@@ -11,7 +11,7 @@ const Count = ({ count, handleIncrement, handleDecrement }: CountProps) => {
     <div className="space-y-4">
       <h3 className="text-4xl text-center">{count}</h3>
       <div className="flex gap-6 justify-center">
-        <Button onClick={ handleIncrement}>Increment</Button>
+        <Button onClick={handleIncrement}>Increment</Button>
         <Button onClick={handleDecrement}>Decrement</Button>
       </div>
     </div>
